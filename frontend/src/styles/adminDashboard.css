@@ -1,0 +1,123 @@
+/* Container wrapper */
+.admin-dashboard {
+    max-width: 1200px;
+    /* margin: 20px auto; */
+    padding: 20px;
+    font-family: Arial, sans-serif;
+    background: #f9f9f9;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Header */
+.header {
+    place-self: center;
+    font-size: 1.8rem;
+    font-weight: 700;
+    margin-bottom: 30px;
+    color: #333;
+    position: relative;
+    background-color: antiquewhite;
+    width: 100%;
+    height: 63px;
+    margin-block-start: auto;
+}
+
+
+.full-body {
+    display: flex;
+    gap: 40px;
+    flex-wrap: wrap;
+    /* justify-content: flex-start; */
+}
+
+/* Buttons container - vertical grid */
+.titles {
+    display: grid;
+    max-width: fit-content;
+    row-gap: 15px;
+    margin-bottom: 20px;
+    height: 340px;
+    width: 225px;
+}
+
+.titles button {
+    background-color: #2d87f0;
+    padding: 10px 20px;
+    /* horizontal padding fixed */
+    width: 200px;
+    /* set fixed minimum width */
+    height: 40px;
+    /* fixed height */
+    color: white;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    font-size: 16px;
+    white-space: nowrap;
+    /* prevent wrapping */
+    overflow: hidden;
+    /* hide overflow */
+    text-overflow: ellipsis;
+    /* show ... if text is too long */
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    transition: background-color 0.3s ease;
+}
+
+.titles button:hover {
+    background-color: #1a5fcc;
+}
+
+
+/* Layout: main content area - flex container */
+
+
+/* Responsive: stack buttons and content on small screens */
+@media (max-width: 700px) {
+    .full-body {
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    .titles {
+        grid-template-columns: 1fr 1fr;
+        max-width: 100%;
+    }
+
+    .titles button {
+        width: 100%;
+    }
+}
+
+/* Buttons common style for form and lists */
+.btn {
+    padding: 8px 16px;
+    margin: 4px 6px 4px 0;
+    font-size: 14px;
+    cursor: pointer;
+    border: none;
+    border-radius: 5px;
+    transition: background-color 0.2s ease-in-out;
+    background-color: #2d87f0;
+    color: white;
+    
+}
+
+.btn:hover {
+    background-color: #1a5fbb;
+}
+
+/* Cancel buttons styled differently */
+.btn-cancel {
+    background-color: #999;
+}
+
+.btn-cancel:hover {
+    background-color: #666;
+}
+
+.Right-box {
+    width: 50%;
+}

@@ -1,0 +1,79 @@
+
+.container {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+.header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 20px;
+}
+
+.header h2 {
+  font-size: 1.5rem;
+  font-weight: bold;
+  margin: 0;
+}
+
+.header button {
+  padding: 8px 16px;
+  background-color: #3b82f6; /* Tailwind's blue-500 */
+  color: white;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+.header button:hover {
+  background-color: #ef0e0e; /* Tailwind's blue-600 */
+}
+
+.recipe-card {
+  border: 1px solid #ddd;
+  padding: 16px;
+  border-radius: 8px;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+}
+
+.recipe-title {
+  font-size: 1.25rem;
+  font-weight: 600;
+}
+
+.recipe-status {
+  font-weight: bold;
+  margin-left: 8px;
+}
+
+.approved {
+  color: #16a34a; /* Tailwind's green-600 */
+}
+
+.rejected {
+  color: #dc2626; /* Tailwind's red-600 */
+}
+
+.pending {
+  color: #ca8a04; /* Tailwind's yellow-600 */
+}
+
+.status-msg {
+  margin-top: 0.5rem;
+  font-weight: 500;
+}
+
+.status-msg.approved {
+  color: #15803d;
+}
+
+.status-msg.rejected {
+  color: #dc2626;
+}
+
+.status-msg.pending {
+  color: #facc15;
+  font-weight: 500;
+}
